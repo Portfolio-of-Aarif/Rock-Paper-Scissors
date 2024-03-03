@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="paper-emoji.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="advanced-functions-rock-paper-scissors.css">
+
+</head>
+<body>
+    
+<p class="title">Rock Paper Scissors</p>
+
+<button onclick="playermove('rock')" class="imagebutton">
+    <img class="imageicon" src="rock-emoji.png" alt=""></button>
+
+<button onclick=" playermove('scissors')" class="imagebutton">
+    <img class="imageicon" src="scissors-emoji.png" alt=""></button>
+
+<button onclick=" playermove('paper')" class="imagebutton">
+    <img  class="imageicon" src="paper-emoji.png" alt="" srcset=""></button>
+
+
+
+
+<p class="js-result   result"> </p>
+
+
+<p class="js-output"> </p>
+
+
+<p class="js-score   score"> Wins: 0, Losses: 0, Ties: 0 </p>
+
+<input type="number" id="roundsInput"class="rounds js-round" placeholder="Enter rounds" onkeydown="enterkey(event)">
+<button onclick="startGame()" class="start">Start Game</button>
+
+
+<button onclick="reset()" class="reset">Reset Score</button>
+<button onclick="playAgain()" class="play-again">Play Again</button>
+
+
+
+
+<script src="advanced-functions-rock-paper-scissors.js" >
+
+
+    
+</script>
+
+
+</body>
+</html>
